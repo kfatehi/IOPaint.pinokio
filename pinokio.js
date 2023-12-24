@@ -18,11 +18,7 @@ module.exports = {
         ]
       }
     } else {
-      if (os.platform() === 'win32') {
-        return [{ icon: "fa-solid fa-plug", text: "Install", href: "install_win.json", params: { run: true, fullscreen: true } }]
-      } else {
-        return [{ icon: "fa-solid fa-plug", text: "Install", href: "install.json", params: { run: true, fullscreen: true } }]
-      }
+      return [{ icon: "fa-solid fa-plug", text: "Install", href: "install.json", params: { run: true, fullscreen: true } }]
     }
   }
 }
