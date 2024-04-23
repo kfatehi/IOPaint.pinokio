@@ -11,7 +11,7 @@
     }],
     "run": [{
       "method": "shell.run",
-      "params": { "message": "git clone https://github.com/Sanster/lama-cleaner.git app" }
+      "params": { "message": "git clone https://github.com/Sanster/IOPaint.git app && cd app && git checkout 0ba6c121e0b9d377e43a12bc1806cc160377b408 && cd .." }
     }, {
       "method": "shell.run",
       "params": {
