@@ -1,26 +1,9 @@
 {
-    "cmds": {
-      "nvidia": "pip install torch==1.13.1+cu117 torchvision==0.14.1 --extra-index-url https://download.pytorch.org/whl/cu117",
-      "amd": "pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm5.6",
-      "default": "pip install torch torchvision torchaudio"
-    },
-    "requires": [{
-      "type": "conda",
-      "name": "ffmpeg",
-      "args": "-c conda-forge"
-    }],
     "run": [{
-      "method": "shell.run",
-      "params": { "message": "git clone https://github.com/Sanster/IOPaint.git app && cd app && git checkout 0ba6c121e0b9d377e43a12bc1806cc160377b408 && cd .." }
-    }, {
       "method": "shell.run",
       "params": {
         "venv": "env",
-        "path": "app",
-        "message": [
-          "{{(gpu === 'nvidia' ? self.cmds.nvidia : (gpu === 'amd' ? self.cmds.amd : self.cmds.default))}}",
-          "pip install -r requirements.txt"
-        ]
+        "params": { "message": "pip install iopaint" }
       }
     }, {
       "method": "input",

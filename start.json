@@ -4,8 +4,7 @@
     "method": "shell.run",
     "params": {
       "venv": "env",
-      "path": "app",
-      "message": "python main.py --model=lama --device=cpu --port=8080",
+      "message": "iopaint start --model=lama --device=cpu --port=8080",
       "on": [{ "event": "/http:\/\/[0-9.:]+/", "done": true }]
     }
   }, {

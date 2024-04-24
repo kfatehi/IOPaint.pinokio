@@ -4,7 +4,7 @@ module.exports = {
   icon: "icon.png",
   description: "A free and open-source inpainting tool powered by SOTA AI model https://github.com/Sanster/lama-cleaner",
   menu: async (kernel) => {
-    let installed = await kernel.exists(__dirname, "app", "env")
+    let installed = await kernel.exists(__dirname, "env")
     if (installed) {
       let running = await kernel.running(__dirname, "start.json")
       if (running) {
