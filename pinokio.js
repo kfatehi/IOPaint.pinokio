@@ -1,8 +1,8 @@
 const os = require('os')
 module.exports = {
-  title: "LamaCleaner",
+  title: "IOPaint",
   icon: "icon.png",
-  description: "A free and open-source inpainting tool powered by SOTA AI model https://github.com/Sanster/lama-cleaner",
+  description: "A free and open-source inpainting tool powered by SOTA AI model https://github.com/Sanster/IOPaint",
   menu: async (kernel) => {
     let installed = await kernel.exists(__dirname, "env")
     if (installed) {

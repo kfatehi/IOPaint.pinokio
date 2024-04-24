@@ -11,7 +11,7 @@
     },{
       "method": "browser.open",
       "params": {
-          "uri": "/?selected=LamaCleaner"
+          "uri": "/?selected=IOPaint"
       }
     }]
   }
