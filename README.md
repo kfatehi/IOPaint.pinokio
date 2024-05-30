@@ -1,6 +1,6 @@
 ## warning: outdated
 
-due to lack of time to keep up with the changes upstream as well as to pinokio, i have archived this project and untagged it to no longer appears in the pinokio package list.
+due to lack of time to keep up with the changes upstream as well as to pinokio, i have archived this project and untagged it to no longer appear in the pinokio package list.
 
 ---
 
